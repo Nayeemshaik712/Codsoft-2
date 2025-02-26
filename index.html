@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nayeem Bikes - Find Your Bike at the Best Price</title>
+    <link rel="icon" type="image/x-icon" href="./img/bike-icon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="container nav">
+            <i class="bx bx-menu" id="menu-icon"></i>
+            <a href="#" class="logo">Nayeem<span>Bikes</span></a>
+            <ul class="navbar">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#bikes">Bikes</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#parts">Parts</a></li>
+                <li><a href="#blog">Our Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#login" id="login-btn">Login</a></li>
+                <li><a href="#register" id="register-btn">Register</a></li>
+            </ul>
+            <i class="bx bx-search" id="search-icon"></i>
+            <div class="search-box container">
+                <input type="search" name="" id="search-input" placeholder="Search Here....." />
+            </div>
+        </div>
+    </header>
+
+    <!-- Home section -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Your Dream <span>Bike</span> is Here</h1>
+            <p>Explore a wide range of top-quality bikes at unbeatable prices. Your perfect ride is just a click away.</p>
+            <a href="#bikes" class="btn">Discover More</a>
+        </div>
+    </section>
+
+    <!-- Bikes Section -->
+    <section class="bikes" id="bikes">
+        <div class="heading">
+            <span>Bikes</span>
+            <h2>Experience the Thrill with Our Bikes</h2>
+            <p>From high-speed sports bikes to comfortable cruisers, we have everything for bike enthusiasts.</p>
+        </div>
+        <div class="bikes-container container">
+            <div class="box">
+                <img src="Kawasaki.jpg" alt="Kawasaki" />
+                <h2>Kawasaki</h2>
+            </div>
+            <div class="box">
+                <img src="ducati.jpg" alt="Ducati" />
+                <h2>Ducati</h2>
+            </div>
+            <div class="box">
+                <img src="yamaha.jpg" alt="Yamaha" />
+                <h2>Yamaha</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section class="container about" id="about">
+        <div class="about-img">
+            <img src="bikeslogo.jpg" alt="About Us" />
+        </div>
+        <div class="about-text">
+            <span>About Us</span>
+            <h2>Best Quality <span>Bikes</span> at Best Prices</h2>
+            <p>Nayeem Bikes brings you a range of premium bikes at the most affordable prices. Quality, performance, and satisfaction guaranteed.</p>
+            <a href="#bikes" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Parts Section -->
+    <section class="container parts" id="parts">
+        <div class="heading">
+            <span>Parts</span>
+            <h2>High-Quality Bike Parts for Every Ride</h2>
+            <p>Explore our wide range of bike parts and upgrades to enhance your riding experience.</p>
+        </div>
+        <div class="parts-container">
+            <div class="box">
+                <h3>Brakes</h3>
+                <p>Ensure safety with our reliable brake systems.</p>
+            </div>
+            <div class="box">
+                <h3>Engines</h3>
+                <p>Power up your bike with our high-performance engines.</p>
+            </div>
+            <div class="box">
+                <h3>Tires</h3>
+                <p>Top-quality tires for smooth and safe rides.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="container blog" id="blog">
+        <div class="heading">
+            <span>Blog</span>
+            <h2>Insights and Tips for Bike Enthusiasts</h2>
+            <p>Stay updated with the latest news and articles in the biking world.</p>
+        </div>
+        <div class="blog-container">
+            <div class="box">
+                <h3>5 Tips for Maintaining Your Bike</h3>
+                <p>Learn how to keep your bike in top condition for safer rides.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="box">
+                <h3>The Best Bikes of 2023</h3>
+                <p>Check out our selection of the best bikes available this year.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="box">
+                <h3>Winter Riding Tips</h3>
+                <p>Stay safe and enjoy riding in the winter with our essential tips.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="container contact" id="contact">
+        <div class="contact-info">
+            <h3>Contact Us</h3>
+            <p>Phone: 8801053087</p>
+            <p>Email: <a href="mailto:nayeemshaik712@gmail.com">nayeemshaik712@gmail.com</a></p>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Login Section -->
+    <section class="modal" id="login" style="display:none;">
+        <div class="modal-content">
+            <span class="close" id="close-login">&times;</span>
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="email" name="email" placeholder="Email" required />
+                <input type="password" name="password" placeholder="Password" required />
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Register Section -->
+    <section class="modal" id="register" style="display:none;">
+        <div class="modal-content">
+            <span class="close" id="close-register">&times;</span>
+            <h2>Register</h2>
+            <form id="register-form">
+                <input type="text" name="username" placeholder="Username" required />
+                <input type="email" name="email" placeholder="Email" required />
+                <input type="password" name="password" placeholder="Password" required />
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="footer">
+        <div class="footer-container container">
+            <div class="footer-box">
+                <a href="#" class="logo">Nayeem<span>Bikes</span></a>
+                <div class="social">
+                    <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="bx bxl-instagram"></i></a>
+                    <a href="https://www.youtube.com/@NayeemShaik_712" target="_blank"><i class="bx bxl-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <p>Phone: 8801053087</p>
+                <p>Email: <a href="mailto:nayeemshaik712@gmail.com">nayeemshaik712@gmail.com</a></p>
+            </div>
+            <div class="footer-box">
+                <h3>Find Us</h3>
+                <p>Location: Nayeem Bikes, Doddabalapura, Bengaluru 561203</p>
+                <p><a href="https://www.google.com/maps/search/?api=1&query=Nayeem+Bikes,+Doddabalapura,+Bengaluru+561203" target="_blank" class="btn">View on Map</a></p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Search Functionality
+        document.querySelector("#search-icon").onclick = () => {
+            const searchBox = document.querySelector(".search-box");
+            searchBox.classList.toggle("active");
+        };
+
+        // Login Modal
+        const loginModal = document.getElementById("login");
+        document.getElementById("login-btn").onclick = () => {
+            loginModal.style.display = "block";
+        };
+        document.getElementById("close-login").onclick = () => {
+            loginModal.style.display = "none";
+        };
+
+        // Register Modal
+        const registerModal = document.getElementById("register");
+        document.getElementById("register-btn").onclick = () => {
+            registerModal.style.display = "block";
+        };
+        document.getElementById("close-register").onclick = () => {
+            registerModal.style.display = "none";
+        };
+
+        window.onclick = (event) => {
+            if (event.target == loginModal) {
+                loginModal.style.display = "none";
+            }
+            if (event.target == registerModal) {
+                registerModal.style.display = "none";
+            }
+        };
+
+        // Toggle Navbar and Search
+        const menu = document.querySelector('.navbar');
+        document.querySelector('#menu-icon').onclick = () => {
+            menu.classList.toggle('active');
+        };
+
+        // Remove active classes on scroll
+        window.onscroll = () => {
+            menu.classList.remove('active');
+            document.querySelector(".search-box").classList.remove("active");
+        };
+
+        // Header shadow on scroll
+        let header = document.querySelector("header");
+        window.addEventListener("scroll", () => {
+            header.classList.toggle("shadow", window.scrollY > 0);
+        });
+    </script>
+</body>
+</html>
